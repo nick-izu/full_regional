@@ -47,7 +47,7 @@ layers:
 numOfRegions: 1
 
 regions:
-{-500, 500, -500, 500, -500, 500}
+{-2500, 2500, -1000, 1000, -500, 500}
 
 orientationOption: 0
 
