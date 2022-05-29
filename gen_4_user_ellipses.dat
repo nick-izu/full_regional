@@ -25,7 +25,7 @@ outputAllRadii: 0
 */
                       
 
-domainSize: {1000,1000,1000} 
+domainSize: {5000,2000,1000} 
     /* Mandatory Parameter.
         Creates a domain with dimension x*y*z centered at the origin.*/
 
@@ -93,7 +93,7 @@ seed: 200
     //Seed for random generator. 
         
 
-domainSizeIncrease: {100,100,100} 
+domainSizeIncrease: {500,500,200} 
           //temporary size increase for inserting fracture centers outside domain
           //increases the entire width by this ammount. So, {1,1,1} will increase
           //the domain by adding .5 to the +x, and subbtracting .5 to the -x, etc
