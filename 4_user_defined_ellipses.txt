@@ -1,0 +1,3 @@
+dfnGen /dfnWorks/examples/4fracplus/gen_4_user_ellipses.dat
+dfnFlow /dfnWorks/examples/4fracplus/dfn_explicit.in
+dfnTrans /dfnWorks/examples/4fracplus/PTDFN_control.dat
