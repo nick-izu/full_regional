@@ -47,7 +47,7 @@ END
 
 #=========================== fluid properties =================================
 FLUID_PROPERTY
-  DIFFUSION_COEFFICIENT 1.d-9
+  DIFFUSION_COEFFICIENT 1.6d-9
 END
 
 DATASET Permeability
@@ -57,8 +57,8 @@ END
 #=========================== material properties ==============================
 MATERIAL_PROPERTY soil1
   ID 1
-  POROSITY 0.25
-  TORTUOSITY 0.5d0
+  POROSITY 0.005
+  TORTUOSITY 0.2d0
   CHARACTERISTIC_CURVES default
   PERMEABILITY
     DATASET Permeability
@@ -81,34 +81,26 @@ END
 
 #=========================== output options ===================================
 OUTPUT
-  PERIODIC TIME 5.d3 second
-#  FORMAT TECPLOT BLOCK
-  PRINT_PRIMAL_GRID
-  FORMAT VTK
+  FORMAT TECPLOT BLOCK
+  FLUXES
+  FLORATE
   MASS_FLOWRATE
   MASS_BALANCE
-  VARIABLES
-    LIQUID_PRESSURE
-    PERMEABILITY_X
-    PERMEABILITY_Y
-    PERMEABILITY_Z
-    POROSITY
   /
 END
 
 #=========================== times ============================================
 TIME
-  INITIAL_TIMESTEP_SIZE  1.d-8 s
-  FINAL_TIME 5.d5 s
-  MAXIMUM_TIMESTEP_SIZE 1.d3 s
-  #STEADY_STATE
+  INITIAL_TIMESTEP_SIZE  1.d-3 y
+  FINAL_TIME 1.d3 y
+  MAXIMUM_TIMESTEP_SIZE 1.d0 y
 END
 
 #=========================== regions ==========================================
 REGION All
   COORDINATES
-    -5.d20 -5.d20 -5.d20
-    5.d20 5.d20 5.d20
+    -1.d20 -1.d20 -1.d20
+     1.d20  1.d20  1.d20
   /
 END 
 
@@ -131,7 +123,7 @@ TRANSPORT_CONDITION inject
   TYPE dirichlet_zero_gradient
     CONSTRAINT_LIST
     0.d0 inlet
-    0.005d0 initial 
+    1.0d0 initial 
   /
 END
 
@@ -143,7 +135,7 @@ END
 
 CONSTRAINT inlet
   CONCENTRATIONS
-    TRACER 1.d-3 T
+    TRACER 1.d0 T
   /
 END
 
@@ -152,7 +144,7 @@ FLOW_CONDITION initial
   TYPE
      PRESSURE dirichlet 
   /
-  PRESSURE 1.01325d6
+  PRESSURE 1.0d6
 END
 
 
@@ -160,14 +152,14 @@ FLOW_CONDITION outflow
   TYPE 
      PRESSURE dirichlet
   /
-  PRESSURE 1.d6
+  PRESSURE 1.0d6
 END
 
 FLOW_CONDITION inflow
   TYPE
     PRESSURE dirichlet
   /
-  PRESSURE 1.1d6
+  PRESSURE 1.001d6
 END
 
 #=========================== condition couplers ===============================
