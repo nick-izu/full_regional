@@ -52,7 +52,7 @@ regions:
 
 orientationOption: 0
 
-h: 1
+h: 3
   /* Minimum fracture length scale(meters)
     Any fracture with a feature, such as and intersection, of less than h will be rejected. */
 
@@ -200,7 +200,7 @@ ebetaDistribution: {1,1,1}   /* Beta is the rotation around the polygon's normal
                     1 - constant angle (specefied below by "ebeta")    */                
     
     
-e_p32Targets: {0.0099,0.0113,0.0240} 
+e_p32Targets: {0.099,0.113,0.240} 
 /* Elliptical families target fracture intensity per family.
 When using stopCondition = 1 (defined at the top of the input file), families will 
 be inserted untill the families desired fracture intensity has been reached. 
