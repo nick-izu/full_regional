@@ -94,7 +94,7 @@ seed: 200
     //Seed for random generator. 
         
 
-domainSizeIncrease: {500,500,200} 
+domainSizeIncrease: {1000,1000,500} 
           //temporary size increase for inserting fracture centers outside domain
           //increases the entire width by this ammount. So, {1,1,1} will increase
           //the domain by adding .5 to the +x, and subbtracting .5 to the -x, etc
