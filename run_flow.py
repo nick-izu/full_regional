@@ -36,15 +36,15 @@ tortuosity= 1.0
 
 variable = "transmissivity"
 function = "correlated"
-params = {"alpha":8.0*10**-9, "beta":0.6}
+params = {"alpha":8.0*10**-9, "beta":0.8}
 b1,perm1,T1 = DFN.generate_hydraulic_values(variable,function,params,family_id=1)
 
 function = "correlated"
-params = {"alpha":2.2*10**-9, "beta":0.6}
+params = {"alpha":2.2*10**-9, "beta":0.7}
 b2,perm2,T2 = DFN.generate_hydraulic_values(variable,function,params,family_id=2)
 
 function = "correlated"
-params = {"alpha":7.0*10**-11, "beta":0.6}
+params = {"alpha":7.0*10**-11, "beta":0.7}
 b3,perm3,T3 = DFN.generate_hydraulic_values(variable,function,params,family_id=3)
 # Then we combine them.
 T = T1 + T2 + T3 
