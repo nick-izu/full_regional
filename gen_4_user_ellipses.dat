@@ -200,7 +200,7 @@ ebetaDistribution: {1,1,1}   /* Beta is the rotation around the polygon's normal
                     1 - constant angle (specefied below by "ebeta")    */                
     
     
-e_p32Targets: {0.099,0.113,0.240} 
+e_p32Targets: {0.01,0.0513,0.0740} 
 /* Elliptical families target fracture intensity per family.
 When using stopCondition = 1 (defined at the top of the input file), families will 
 be inserted untill the families desired fracture intensity has been reached. 
