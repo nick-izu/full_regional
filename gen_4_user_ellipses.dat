@@ -45,7 +45,7 @@ layers:
     shape familiy section) 
 */   
 
-numOfRegions: 3
+numOfRegions: 0
 
 regions:
 {-2500, 2500, -1000, 1000, -500, 200}
@@ -54,7 +54,7 @@ regions:
 
 orientationOption: 0
 
-h: 2
+h: 0.2
   /* Minimum fracture length scale(meters)
     Any fracture with a feature, such as and intersection, of less than h will be rejected. */
 
@@ -179,13 +179,13 @@ famProb: {0.219,0.250,0.531}
 nFamEll: 3
     //Having this option = 0 will ignore all rectangle family variables
 
-eLayer: {1,2,3}
+eLayer: {0,0,0}
     /* Defines which domain the family belings to.
      Layer 0 is the entire domain.
      Layers numbered > 0 coorespond to layers defined above
      1 corresponts to the first layer listed, 2 is the next layer listed, etc */
      
-eRegion: {1,2,3}
+eRegion: {0,0,0}
 
 //edist is a mandatory parameter if using statistically generated ellipses 
 edistr: {2,2,2}   /* Ellipse statistical distribution options:
