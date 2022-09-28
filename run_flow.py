@@ -19,7 +19,7 @@ b1,perm1,T1 = DFN.generate_hydraulic_values(variable,function,params,family_id=1
 
 #function = "correlated"
 #params = {"alpha":8.0*10**-9, "beta":0.8}
-#b2,perm2,T2 = DFN.generate_hydraulic_values(variable,function,params,family_id=2)
+#b1,perm2,T2 = DFN.generate_hydraulic_values(variable,function,params,family_id=2)
 
 #function = "correlated"
 #params = {"alpha":8.0*10**-9, "beta":0.8}
