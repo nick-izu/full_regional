@@ -32,9 +32,9 @@ domainSize: {5000,2000,1000}
 numOfLayers: 3    //number of layers
 
 layers: 
-{350,500}
-{200,350}
 {-500,200}
+{200,350}
+{350,500}
 
 
 /*  Layers need to be listed line by line
@@ -45,14 +45,16 @@ layers:
     shape familiy section) 
 */   
 
-numOfRegions: 1
+numOfRegions: 3
 
 regions:
-{-2500, 2500, -1000, 1000, -500, 500}
+{-2500, 2500, -1000, 1000, -500, 200}
+{-2500, 2500, -1000, 1000, 200, 350}
+{-2500, 2500, -1000, 1000, 350, 500}
 
 orientationOption: 0
 
-h: 3
+h: 2
   /* Minimum fracture length scale(meters)
     Any fracture with a feature, such as and intersection, of less than h will be rejected. */
 
@@ -94,7 +96,7 @@ seed: 200
     //Seed for random generator. 
         
 
-domainSizeIncrease: {1000,1000,500} 
+domainSizeIncrease: {500,500,200} 
           //temporary size increase for inserting fracture centers outside domain
           //increases the entire width by this ammount. So, {1,1,1} will increase
           //the domain by adding .5 to the +x, and subbtracting .5 to the -x, etc
@@ -183,7 +185,7 @@ eLayer: {1,2,3}
      Layers numbered > 0 coorespond to layers defined above
      1 corresponts to the first layer listed, 2 is the next layer listed, etc */
      
-eRegion: {0,0,0}
+eRegion: {1,2,3}
 
 //edist is a mandatory parameter if using statistically generated ellipses 
 edistr: {2,2,2}   /* Ellipse statistical distribution options:
