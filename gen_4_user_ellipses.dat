@@ -53,7 +53,7 @@ regions:
 
 orientationOption: 0
 
-h: 0.1
+h: 0.25
   /* Minimum fracture length scale(meters)
     Any fracture with a feature, such as and intersection, of less than h will be rejected. */
 
@@ -178,7 +178,7 @@ famProb: {0.219,0.250,0.531}
 nFamEll: 3
     //Having this option = 0 will ignore all rectangle family variables
 
-eLayer: {0,0,0}
+eLayer: {1,1,1,2,2,2,3,3,3}
     /* Defines which domain the family belings to.
      Layer 0 is the entire domain.
      Layers numbered > 0 coorespond to layers defined above
