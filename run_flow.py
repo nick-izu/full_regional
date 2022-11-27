@@ -29,29 +29,29 @@ b3,perm3,T3 = DFN.generate_hydraulic_values(variable,function,params,family_id=3
 variable = "transmissivity"
 function = "correlated"
 params = {"alpha":8.0*10**-9, "beta":0.8}
-b4,perm4,T4 = DFN.generate_hydraulic_values(variable,function,params,family_id=1)
+b4,perm4,T4 = DFN.generate_hydraulic_values(variable,function,params,family_id=4)
 
 function = "correlated"
 params = {"alpha":2.2*10**-9, "beta":0.7}
-b5,perm5,T5 = DFN.generate_hydraulic_values(variable,function,params,family_id=2)
+b5,perm5,T5 = DFN.generate_hydraulic_values(variable,function,params,family_id=5)
 
 function = "correlated"
 params = {"alpha":7.0*10**-11, "beta":0.7}
-b6,perm6,T6 = DFN.generate_hydraulic_values(variable,function,params,family_id=3)
+b6,perm6,T6 = DFN.generate_hydraulic_values(variable,function,params,family_id=6)
 
 #Layer = 3
 variable = "transmissivity"
 function = "correlated"
 params = {"alpha":8.0*10**-9, "beta":0.8}
-b7,perm7,T7 = DFN.generate_hydraulic_values(variable,function,params,family_id=1)
+b7,perm7,T7 = DFN.generate_hydraulic_values(variable,function,params,family_id=7)
 
 function = "correlated"
 params = {"alpha":2.2*10**-9, "beta":0.7}
-b8,perm8,T8 = DFN.generate_hydraulic_values(variable,function,params,family_id=2)
+b8,perm8,T8 = DFN.generate_hydraulic_values(variable,function,params,family_id=8)
 
 function = "correlated"
 params = {"alpha":7.0*10**-11, "beta":0.7}
-b9,perm9,T9 = DFN.generate_hydraulic_values(variable,function,params,family_id=3)
+b9,perm9,T9 = DFN.generate_hydraulic_values(variable,function,params,family_id=9)
 
 
 # Then we combine them.
