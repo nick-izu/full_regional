@@ -32,9 +32,10 @@ domainSize: {5000,2000,1000}
 numOfLayers: 3    //number of layers
 
 layers: 
-{-500,200}
-{200,350}
 {350,500}
+{200,340}
+{-500,190}
+
 
 
 /*  Layers need to be listed line by line
@@ -84,7 +85,7 @@ printRejectReasons: 1
         1: print all rejection reasons to screen
 */
 
-visualizationMode: 1
+visualizationMode: 0
 /* Options: 0 or 1 
    Used during meshing: 
    0: creates a fine mesh, according to h parameter;
@@ -132,7 +133,7 @@ boundaryFaces: {1,1,0,0,0,0}
 */
                           
 
-rejectsPerFracture: 10  /*If fracture is rejected, it will be re-translated to a new
+rejectsPerFracture: 25  /*If fracture is rejected, it will be re-translated to a new
                          position this number of times. 
                          
                          This helps hit distribution targets for stochastic families 
