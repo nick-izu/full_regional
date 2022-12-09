@@ -99,9 +99,9 @@ perm = perm1 + perm2 + perm3 + perm4 + perm5 + perm6 + perm7 + perm8 + perm9
 #exit()
 
 #dfnFlow
-DFN.dfn_flow()
+#DFN.dfn_flow()
 
 
 #dfntrans
-DFN.dfn_trans()
+#DFN.dfn_trans()
 
