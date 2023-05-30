@@ -1,1 +1,1 @@
-python run_flow.py -name /dfnWorks/work/full_regional -input 4_user_defined_ellipses.txt -ncpu 32
+python run_flow.py -name /dfnWorks/work/full_regional -input 4_user_defined_ellipses.txt -ncpu 16
